@@ -16,7 +16,7 @@ For i = 1 to Documents.Count
   End If
 Next i
 
-If blnExistrs = False Then
+If blnExists = False Then
   msgBox Prompt:="Document "filename.docx" not found."
 ...
 ```
