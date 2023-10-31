@@ -21,3 +21,30 @@ Sub TestIfObjectExists()
     msgBox Prompt:="Document "filename.docx" not found."
 ...
 ```
+
+
+
+### Add Header Text
+```
+Sub AddHeaderText()
+
+With ActiveDocument.Sections(2).Headers(wdHeaderFooterPrimary)
+  .LinkToPrevious = False
+  .Range.Text = "Some sample text"
+End With
+
+End Sub
+
+' Or with a specific document:
+
+Sub AddHeaderText()
+
+With Documents("Name of a Document.docm").Sections(2).Headers(wdHeaderFooterPrimary)
+  .LinkToPrevious = False
+  .Range.Text = "Some sample text"
+End With
+
+End Sub
+
+
+```
