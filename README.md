@@ -45,6 +45,19 @@ With Documents("Name of a Document.docm").Sections(2).Headers(wdHeaderFooterPrim
 End With
 
 End Sub
+```
 
+### Checking if the font is Arial
+```
+Sub checkingFont()
 
+Dim oPara As Paragraph
+
+    For Each oPara In ActiveDocument.Paragraphs
+        If oPara.Range.Font.Name = "Arial" Then
+            MsgBox Prompt:="Yes, we are using the font called ""Arial"""
+        End If
+    Next
+
+End Sub
 ```
