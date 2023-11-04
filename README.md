@@ -62,6 +62,8 @@ Dim oPara As Paragraph
 End Sub
 ```
 
+Getting into vba needs a lot of training.
+
 ### Counting the characters in a paragraph
 ```
 ActiveDocument.Paragraph(1).Range.Characters.Count
