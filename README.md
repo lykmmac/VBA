@@ -61,3 +61,8 @@ Dim oPara As Paragraph
 
 End Sub
 ```
+
+### Counting the characters in a paragraph
+```
+ActiveDocument.Paragraph(1).Range.Characters.Count
+```
