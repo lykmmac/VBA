@@ -68,3 +68,18 @@ Getting into vba needs a lot of training.
 ```
 ActiveDocument.Paragraph(1).Range.Characters.Count
 ```
+
+### Left Funcion
+
+```
+Sub howLeftWorks()
+Dim astr, bstr, gstr
+
+astr = "mocowanie" ' Defining a string
+bstr = Left(astr, 1)
+gstr = Left(astr, 5)
+
+MsgBox bstr & vbCr & gstr
+
+End Sub
+```
