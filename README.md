@@ -83,3 +83,16 @@ MsgBox bstr & vbCr & gstr
 
 End Sub
 ```
+
+### Adding some text in the header section of a document
+```
+Sub AddHeaderText()
+
+With ActiveDocument.Sections(1).Headers(wdHeaderFooterPrimary)
+    .LinkToPrevious = False
+    .Range.Text = "some text"
+End With
+
+
+End Sub
+```
